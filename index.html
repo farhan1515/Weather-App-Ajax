@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+    <link rel="icon" href="images/clouds.png" >
+</head>
+
+<body>
+    <div class="container">
+        <h1>Weather App-Ajax</h1>
+        <div class="search">
+            <input type="text" id="locationInput" placeholder="Enter City name" spellcheck="false">
+            <button id="getWeatherBtn"><img src="images/search.png" alt=""></button>
+        </div>
+        <div class="unit-toggle">
+            <label for="celsius">Celsius</label>
+            <input type="radio" name="unit" id="celsius" value="metric" checked>
+            <label for="fahrenheit">Fahrenheit</label>
+            <input type="radio" name="unit" id="fahrenheit" value="imperial">
+        </div>
+        <div id="weatherData" class="hidden">
+           
+        </div>
+        <div id="error" class="hidden">
+           
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
